@@ -11,8 +11,16 @@
     <p>You can use json-server delay flag to imitate slow internet connection speed.</p>
     </li>
     <li>
-    <h3><b>Something</b></h3>
-    <p>Something</p>
+    <h3><b>Router Navigation Guard</b></h3>
+    <p>
+        VueRouter add more cycle hooks to your components:
+        <ul>
+            <li>beforeRouteEnter() - you <b>CANT</b> access <b>this</b> inside this hook</li>
+            <li>beforeRouteUpdate() - you <b>CAN</b> access <b>this</b> inside this hook</li>
+            <li>beforeRouteLeave() - you <b>CAN</b> access <b>this</b> inside this hook</li>
+        </ul>
+        All of this hooks <b>MUST</b> call <b>next()</b> function inside them
+    </p>
     </li>
 </ol>
 
